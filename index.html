@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myText").value;
+  const url = new URL(x);
+  const url_host = url.host;
+  let res = url_host.replaceAll(".", "-");
+  url.hostname = '0-'+ res + '.lib.unibocconi.it';
+  createLinkNode(url, document.body);
+ 
+}
+</script>
+
+</head>
+<body>
+
+
+<h2>Insert Full Journal Website Here</h2>
+
+This works with most Journals, but also with The Economist, the WSJ and Financial Times.
+
+<input type="text" id="myText" value="">
+
+<p>When you click "Try it", a function will be called.</p>
+
+<button onclick="myFunction()">Convert</button>
+
+<p id="demo"></p>
+
+<script>
+function createLinkNode(url, parent) {
+	const linkTextNode = document.createTextNode(url);
+  	const linkNode = document.createElement('a');
+  	linkNode.href = url;
+  	linkNode.appendChild(linkTextNode);
+  	parent.appendChild(linkNode);
+}
+</script>
+
+</body>
+</html>
