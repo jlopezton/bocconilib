@@ -1,13 +1,21 @@
-# bocconilib
-Converts Journal Links into Bocconi Library links that have full article access (Only works for Bocconi personnel).
+# Bocconilib: Get instant access to journal articles though Bocconi's library
 
-When you find an article for which you don't have access, you can use the library's off-campus website to access it. 
+[Bocconilib](https://jlopezton.github.io/bocconilib/) is a convenient tool for Bocconi University personnel, specifically designed to streamline access to restricted journal articles via the Bocconi Library's off-campus website. The process involves converting standard journal article URLs into ones that are compatible with Bocconi Library's system, thereby allowing users to directly access articles through the library's service.
 
-This very simple program coverts a URL for a journal article in a URL that uses Bocconi Library as a passthrough. This allows users to see articles for which Bocconi has access.
-Generally, users that are working outside of the university can have access to articles as if they were on campus, by going into the library website, looking for the journal and then searching for the article. This must be done for each article, meaning time lost doing two searches.
-This program allows users to have direct access to articles without going to the Bocconi Library website, looking for the Journal and then looking again for the article. The converted URL is already in the format that allows the journal to ‘understand’ that you are using the library.
-The conversion is actually very simple: To get the Bocconi library link, the url hostname of the journal is added at the beginning of the library website (lib.unibocconi.it), but with dashes (-) instead of dots (.) and with an additional "0-" at the beginning.
+## What does it solve?
 
-Example 1: You find an article about Poverty and Crime. The article is in British Journal of Sociology, which is part of Wiley Publishing. Your access will be restricted if you're not on campus. If you want to use Bocconi Library’s off campus access, you will go to the Bocconi Library website, search for BJS, open the link, log in with your Bocconi credentials, search for the article again, and just then you would access to the article.
-The program simplifies things by allowing you to just copy the article URL, then get a link that has access through Bocconi library, saving you a few steps.
- And clicking the new URL link. Bocconi may ask you for your credentials, but you save the time of doing the search of the journal.
+Typically, when you find a journal article that's locked behind a paywall or otherwise restricted, you would need to access it through the Bocconi Library's off-campus website. This entails navigating to the library website, finding the specific journal, and then conducting another search for the desired article. The entire process needs to be repeated for each article, resulting in significant time wasted on redundant searching. 
+
+Bocconilib effectively eliminates these extra steps, allowing you to directly access these articles in just one click. 
+
+## How does it work?
+
+Bocconilib simplifies URL conversion into a more user-friendly process. It achieves this by adding the URL hostname of the original journal at the beginning of the library website address, replacing dots (.) with dashes (-), and prefixing the entire string with an "0-". This formatted URL signals to the journal website that you're accessing it through the library, hence, granting you access to the content.
+
+## Example Usage
+
+Consider an instance where you find an intriguing article about [Poverty and Crime in the British Journal of Sociology](https://onlinelibrary.wiley.com/doi/full/10.1111/1468-4446.12083) (published by Wiley). Without being on campus, your access to the article would be restricted. 
+
+Typically, to bypass this, you would need to navigate to the Bocconi Library website, search for BJS, open the relevant link, log in with your Bocconi credentials, and search again for the original article. Only after all these steps would you finally gain access to the desired content. 
+
+Bocconilib drastically simplifies this process: all you need to do is copy the original article URL and convert it using the program. The [resulting link]() will grant you access through the Bocconi Library. Although you might still be asked to enter your Bocconi credentials, this method saves you the hassle of searching for the journal and article manually each time.
